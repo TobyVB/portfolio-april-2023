@@ -75,38 +75,38 @@ const Navbar = () => {
               className="nav-link-git"
               style={{
                 borderRadius: "5px",
-                boxShadow: "0px 0px 2px orangered",
+                boxShadow: "0px 0px 2px rgb(38, 159, 235)",
               }}
             >
-              {/* <Link
-                to={{ pathname: "https://github.com/TobyVB" }}
-                target="_blank"
-              > */}
               <a
                 onClick={() =>
                   window.open(`${"https://github.com/TobyVB"}`, "_blank")
                 }
+                style={{
+                  display: "inline-flex",
+                  gap: ".25em",
+                }}
               >
                 <UilCodeBranch size="20" color="white" />
                 <UilFavorite size="20" color="white" />
               </a>
-              {/* </Link> */}
             </span>
           </div>
 
           {!navOpen ? (
             <span
               className={navOpen ? "burger " + fade : "burger2 " + fade}
-              onClick={fade === "" && toggleNav}
+              onClick={fade === "" ? toggleNav : undefined}
             >
               <UilBars size="30" color="white" />
             </span>
           ) : (
             <span
+              style={{ marginLeft: "1em" }}
               className={navOpen ? "burger " + fade : "burger2 " + fade}
-              onClick={fade === "" && toggleNav}
+              onClick={fade === "" ? toggleNav : undefined}
             >
-              <UilTimes size="30" color="orangeRed" />
+              <UilTimes size="30" color="rgb(38, 159, 235)" />
             </span>
           )}
         </div>
