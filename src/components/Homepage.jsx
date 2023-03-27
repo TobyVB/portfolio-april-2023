@@ -87,7 +87,7 @@ export default function Homepage() {
           className={`homepage-introduction ${textClass}`}
         >
           <p>
-            In looking for a career that would satisy my itch to problem solve,
+            In looking for a career that would satisfy my itch to problem solve,
             I found programming…
           </p>
           <p>
