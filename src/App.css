@@ -647,7 +647,10 @@ h3 div {
 .project-outer:hover .project-btn {
   transition-delay: 0.15s;
   background: rgba(38, 159, 235, 1);
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+.project-outer:hover .project-btn a {
+  font-weight: 600;
 }
 .circle {
   border-radius: 100%;
