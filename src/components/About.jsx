@@ -21,7 +21,7 @@ function Percentage() {
   return (
     <div>
       {/* <p style={{ fontSize: "2rem" }}>{Math.ceil(percent)}%</p> */}
-      <p>{percent < 20 && <div className="goDown"></div>}</p>
+      <div>{percent < 20 && <p className="goDown"></p>}</div>
     </div>
   );
 }
@@ -152,9 +152,9 @@ export default function About() {
   ];
 
   function Skills() {
-    return skillData.map((skill) => {
+    return skillData.map((skill, index) => {
       return (
-        <div className={`about-item-container`}>
+        <div className={`about-item-container`} key={index}>
           <div
             className={`about-item ${animateClass}`}
             style={{
@@ -172,9 +172,9 @@ export default function About() {
   }
 
   function Tools() {
-    return toolData.map((tool) => {
+    return toolData.map((tool, index) => {
       return (
-        <div className="about-item-container">
+        <div className="about-item-container" key={index}>
           <div
             className={`about-item ${animateClass}`}
             style={{
@@ -207,7 +207,7 @@ export default function About() {
         }}
       ></div>
       <div ref={contentRef}>
-        <div style={{ padding: "10em 0 5em 0" }}>
+        <div className="page-body">
           <div className="section">
             <div
               style={{
@@ -215,7 +215,6 @@ export default function About() {
                 fontSize: "1.25rem",
                 textAlign: "left",
                 margin: "0 auto",
-                width: "90%",
               }}
             >
               <h2 style={{ textAlign: "center" }}>Who am I?</h2>

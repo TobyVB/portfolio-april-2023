@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { UilFileDownload } from "@iconscout/react-unicons";
 
 export default function Resume() {
   useEffect(() => {
@@ -38,7 +39,15 @@ export default function Resume() {
                 onClick={() =>
                   window.open("url(../../resume-march-2023.pdf", "_blank")
                 }
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: ".3em",
+                }}
               >
+                <span>
+                  <UilFileDownload size="30" color="white" />
+                </span>{" "}
                 download
               </a>
             </div>
@@ -59,7 +68,15 @@ export default function Resume() {
                 onClick={() =>
                   window.open("url(../../resume-march-2023.pdf", "_blank")
                 }
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: ".3em",
+                }}
               >
+                <span>
+                  <UilFileDownload size="30" color="white" />
+                </span>{" "}
                 download
               </a>
             </div>

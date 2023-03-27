@@ -4,7 +4,7 @@ export default function Projects() {
     window.scrollTo(0, 0);
   }, []);
 
-  //   const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const projectData = [
     {
@@ -49,23 +49,47 @@ export default function Projects() {
     },
   ];
 
-  //   function aspectRatio(startW, startH, scale) {
-  //      return console.log("new width ="+startW*scale+", new height ="+startH*scale)
-  //   }
   function ProjectsArray() {
-    return projectData.map((project) => {
+    return projectData.map((project, index) => {
       return (
-        <>
+        <div key={index}>
+          {/* INFO */}
+          {/* <div
+            style={{
+              width: "100%",
+              display: `${open !== project.title ? "none" : ""}`,
+            }}
+          >
+            <div
+              onClick={() => setOpen(false)}
+              style={{
+                // position: "fixed",
+                width: "350px",
+                padding: "1em",
+                borderRadius: "3px",
+                left: "0",
+                right: "0",
+                top: "50%",
+                margin: "auto",
+                background: "black",
+                zIndex: "1",
+                background: "rgba(0,0,0,.2)",
+                color: "white",
+                border: "1px solid white",
+              }}
+            >
+              {project.info}
+            </div>
+          </div> */}
+          {/* END-INFO */}
+
           <h3>{project.title}</h3>
 
           <div
             className="project-outer"
             style={{
-              width: "392px",
-              height: "252px",
               margin: "auto auto 3em auto",
               overflow: "hidden",
-              paddingTop: "1em",
             }}
           >
             <div
@@ -77,65 +101,69 @@ export default function Projects() {
               style={{
                 borderRadius: "5px",
                 backgroundImage: `url(${project.path})`,
-                width: "364px",
-                height: "234px",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 margin: "auto",
               }}
-            ></div>
-            <div
-              className="project-btn-containers"
-              style={{
-                margin: "0 auto auto",
-                position: "absolute",
-                left: "0",
-                right: "0",
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "3em",
-              }}
             >
-              <div className="project-btn">
-                <a onClick={() => window.open(`${project.github}`, "_blank")}>
-                  github
-                </a>
-              </div>
-              {/* <div className="project-btn">
-                <a onClick={() => setOpen(project.title)}>?</a>
-              </div> */}
-
-              {/* <div
+              {" "}
+              <div
                 style={{
                   width: "100%",
                   display: `${open !== project.title ? "none" : ""}`,
                 }}
               >
                 <div
+                  onClick={() => setOpen(false)}
                   style={{
-                    position: "fixed",
-                    width: "400px",
                     padding: "1em",
-                    borderRadius: "3px",
-                    left: "0",
-                    right: "0",
-                    top: "50%",
-                    margin: "auto",
-                    background: "black",
+                    background: "rgba(0,0,0,0.85)",
+                    zIndex: "1",
+                    color: "white",
+                    height: "50vw",
+                    textAlign: "left",
                   }}
                 >
                   {project.info}
                 </div>
-              </div> */}
-
-              <div className="project-btn">
-                <a onClick={() => window.open(`${project.demo}`, "_blank")}>
-                  demo
-                </a>
               </div>
             </div>
+            {open !== project.title && (
+              <div
+                className="project-btn-containers"
+                style={{
+                  margin: "0 auto auto",
+                  position: "absolute",
+                  left: "0",
+                  right: "0",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  marginTop: "-1em",
+                }}
+              >
+                <div
+                  className="project-btn"
+                  onClick={() => window.open(`${project.github}`, "_blank")}
+                >
+                  <a>github</a>
+                </div>
+                <div
+                  onClick={() => setOpen(project.title)}
+                  className="project-btn circle"
+                >
+                  <a>?</a>
+                </div>
+
+                <div
+                  className="project-btn"
+                  onClick={() => window.open(`${project.demo}`, "_blank")}
+                >
+                  <a>demo</a>
+                </div>
+              </div>
+            )}
           </div>
-        </>
+        </div>
       );
     });
   }
@@ -155,10 +183,18 @@ export default function Projects() {
         }}
       ></div>
       <div style={{ padding: "10em 0 1em 0" }}>
-        <h2 style={{ lineHeight: "0" }}>My Projects</h2>
-        <p>Some projects I made</p>
+        <h2 style={{ color: "rgba(38, 159, 235, 1)", lineHeight: "0" }}>
+          My Projects
+        </h2>
       </div>
-      <div className="about-items-container2">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "3em",
+          margin: "5em 0",
+        }}
+      >
         <ProjectsArray />
       </div>
     </div>
