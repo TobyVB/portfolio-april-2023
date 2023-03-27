@@ -1,4 +1,6 @@
 body {
+  /* background-color: #242424; */
+  /* background-color: rgb(0, 17, 67); */
   background-color: black;
   color: white;
   margin: 0;
@@ -6,11 +8,11 @@ body {
   place-items: center;
 }
 #root {
+  /* max-width: 1280px; */
   margin: 0 auto;
+  /* padding: 2rem; */
   text-align: center;
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -102,10 +104,10 @@ a.active {
   margin: 0 0.5em;
   padding: 0.65em 0.75em 0.35em 0.75em;
   border-radius: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(0, 0, 0, 1); */
+  /* background: rgb(255, 255, 255); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 2px solid rgb(38, 159, 235);
 }
 
 .homepage-icons {
@@ -121,9 +123,11 @@ a.active {
 }
 @keyframes breathAnim {
   from {
+    background-size: 100%;
   }
   to {
-    background-position-y: 10px;
+    background-size: 103%;
+    transform: rotate(-0.2deg);
   }
 }
 @media screen and (max-width: 700px) {
@@ -168,13 +172,10 @@ a.active {
     margin: 3em auto auto auto;
   }
   .footer-inner-container {
-    display: flex;
     flex-direction: column;
-    line-height: 0;
   }
-  .footer-icons {
-    display: flex;
-    margin: 1em auto 1em auto;
+  .homepage-icons {
+    margin-left: -0.6em;
   }
   .homepage-jumbo-text {
     font-size: 1.75rem;
@@ -248,7 +249,7 @@ a.active {
     max-width: 400px;
   }
   .typeText {
-    line-height: 2rem;
+    /* line-height: 0rem; */
     font-size: 2rem;
   }
   .typeText2 {
@@ -266,13 +267,13 @@ a.active {
 @media screen and (min-width: 700px) {
   .typeText {
     display: block;
-    line-height: 4rem;
-    font-size: 3rem;
+    /* line-height: 0.8rem; */
+    font-size: 4rem;
   }
   .typeText2 {
     display: block;
     /* line-height: 0.8rem; */
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin: 3em 0;
   }
   .nav-links {
@@ -304,19 +305,17 @@ a.active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5em;
-    gap: 5em;
   }
   .section2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     gap: 5em;
   }
 
   .page-body {
-    padding: 10em 10% 3em 10%;
+    padding: 10em 10% 5em 10%;
   }
 
   .homepage-pic1 {
@@ -330,14 +329,6 @@ a.active {
     min-width: 35vw;
     float: right;
     margin: 1em 0;
-  }
-  .footer-inner-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  .footer-icons {
-    display: flex;
-    margin: 1em 0 1em 0;
   }
   .bg-before {
     background-size: 130%;
@@ -392,7 +383,7 @@ a.active {
     text-align: left;
     font-size: 1.25rem;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
   }
   .about-pic {
     height: 40vw;
@@ -462,12 +453,12 @@ a.active {
   color: rgb(38, 159, 235);
 }
 .underline {
-  height: 5px;
+  height: 3px;
   width: 0%;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 .nav-link:hover .underline {
-  transition: 0.25s;
+  transition: 0.5s;
   width: 100%;
 }
 .nav-link-git {
@@ -544,10 +535,8 @@ h3 div {
 /* ############################# */
 .portfolioAnim {
   animation-name: rotate;
-  animation-duration: 60s;
+  animation-duration: 120s;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-
   animation-timing-function: linear;
 }
 @keyframes rotate {
@@ -555,7 +544,7 @@ h3 div {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
   }
 }
 .waive-start {

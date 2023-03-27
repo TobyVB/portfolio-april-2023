@@ -138,7 +138,6 @@ export default function Projects() {
                   right: "0",
                   display: "flex",
                   justifyContent: "space-around",
-                  marginTop: "-1em",
                 }}
               >
                 <div
@@ -183,9 +182,8 @@ export default function Projects() {
         }}
       ></div>
       <div style={{ padding: "10em 0 1em 0" }}>
-        <h2 style={{ color: "rgba(38, 159, 235, 1)", lineHeight: "0" }}>
-          My Projects
-        </h2>
+        <h2 style={{ lineHeight: "0" }}>My Projects</h2>
+        <p>Some projects I made</p>
       </div>
       <div
         style={{

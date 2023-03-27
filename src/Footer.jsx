@@ -16,21 +16,27 @@ const Footer = () => {
         zIndex: "1",
       }}
     >
-      <div className="footer-inner-container">
-        <p>created by Toby Van Baast</p>
-        <p>Copyright &copy;2023 TobyVB</p>
-        <div className="footer-icons">
+      <div
+        className="footer-inner-container"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <p style={{ margin: "1em auto" }}>created by Toby Van Baast</p>
+        <p style={{ margin: "1em auto" }}>Copyright &copy;2023 TobyVB</p>
+        <div style={{ display: "flex", margin: "1em auto 1.5em auto" }}>
           <a
             onClick={() =>
               window.open(`${"https://github.com/TobyVB"}`, "_blank")
             }
           >
             <div style={{ margin: "0 1em" }}>
-              <UilGithub size="17" color="white" />
+              <UilGithub size="20" color="white" />
             </div>{" "}
           </a>
           <div style={{ margin: "0 1em" }}>
-            <UilTwitter size="17" color="white" />
+            <UilTwitter size="20" color="white" />
           </div>
           <a
             onClick={() =>
@@ -41,7 +47,7 @@ const Footer = () => {
             }
           >
             <div style={{ margin: "0 1em" }}>
-              <UilLinkedin size="17" color="white" />
+              <UilLinkedin size="20" color="white" />
             </div>
           </a>
           <a
@@ -50,7 +56,7 @@ const Footer = () => {
             }
           >
             <div style={{ margin: "0 1em" }}>
-              <UilFacebook size="17" color="white" />
+              <UilFacebook size="20" color="white" />
             </div>
           </a>
         </div>
