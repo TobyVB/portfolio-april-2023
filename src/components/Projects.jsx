@@ -54,7 +54,7 @@ export default function Projects() {
       return (
         <div key={index}>
           {/* INFO */}
-          {/* <div
+          <div
             style={{
               width: "100%",
               display: `${open !== project.title ? "none" : ""}`,
@@ -63,8 +63,8 @@ export default function Projects() {
             <div
               onClick={() => setOpen(false)}
               style={{
-                // position: "fixed",
-                width: "350px",
+                position: "fixed",
+                // width: "400px",
                 padding: "1em",
                 borderRadius: "3px",
                 left: "0",
@@ -72,15 +72,11 @@ export default function Projects() {
                 top: "50%",
                 margin: "auto",
                 background: "black",
-                zIndex: "1",
-                background: "rgba(0,0,0,.2)",
-                color: "white",
-                border: "1px solid white",
               }}
             >
               {project.info}
             </div>
-          </div> */}
+          </div>
           {/* END-INFO */}
 
           <h3>{project.title}</h3>
@@ -105,62 +101,33 @@ export default function Projects() {
                 backgroundRepeat: "no-repeat",
                 margin: "auto",
               }}
+            ></div>
+            <div
+              className="project-btn-containers"
+              style={{
+                margin: "0 auto auto",
+                position: "absolute",
+                left: "0",
+                right: "0",
+                display: "flex",
+                justifyContent: "space-around",
+              }}
             >
-              {" "}
-              <div
-                style={{
-                  width: "100%",
-                  display: `${open !== project.title ? "none" : ""}`,
-                }}
-              >
-                <div
-                  onClick={() => setOpen(false)}
-                  style={{
-                    padding: "1em",
-                    background: "rgba(0,0,0,0.85)",
-                    zIndex: "1",
-                    color: "white",
-                    height: "50vw",
-                    textAlign: "left",
-                  }}
-                >
-                  {project.info}
-                </div>
+              <div className="project-btn">
+                <a onClick={() => window.open(`${project.github}`, "_blank")}>
+                  github
+                </a>
+              </div>
+              <div className="project-btn circle">
+                <a onClick={() => setOpen(project.title)}>?</a>
+              </div>
+
+              <div className="project-btn">
+                <a onClick={() => window.open(`${project.demo}`, "_blank")}>
+                  demo
+                </a>
               </div>
             </div>
-            {open !== project.title && (
-              <div
-                className="project-btn-containers"
-                style={{
-                  margin: "0 auto auto",
-                  position: "absolute",
-                  left: "0",
-                  right: "0",
-                  display: "flex",
-                  justifyContent: "space-around",
-                }}
-              >
-                <div
-                  className="project-btn"
-                  onClick={() => window.open(`${project.github}`, "_blank")}
-                >
-                  <a>github</a>
-                </div>
-                <div
-                  onClick={() => setOpen(project.title)}
-                  className="project-btn circle"
-                >
-                  <a>?</a>
-                </div>
-
-                <div
-                  className="project-btn"
-                  onClick={() => window.open(`${project.demo}`, "_blank")}
-                >
-                  <a>demo</a>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       );
