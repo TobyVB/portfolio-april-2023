@@ -42,25 +42,42 @@ const Navbar = () => {
       <div className="nav-link-outer-container">
         <div className="nav-link-container">
           <span onClick={() => toggleNav("hp")} className="nav-link">
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">
+              <span style={{ fontWeight: "600" }}>Home</span>
+            </NavLink>
           </span>
 
           <div className={navOpen ? `nav-links ${shrink}` : "nav-links-closed"}>
             <span onClick={() => toggleNav()} className="nav-link">
               <NavLink to="/about">
-                <UilUser size="20" color="white" /> About
+                <UilUser
+                  size="20"
+                  color="white"
+                  style={{ marginBottom: "-2px" }}
+                />{" "}
+                <span style={{ fontWeight: "300" }}>About</span>
                 <div className="underline bg-1"></div>
               </NavLink>
             </span>
             <span onClick={() => toggleNav()} className="nav-link">
               <NavLink to="/projects">
-                <UilWindow size="20" color="white" /> Projects
+                <UilWindow
+                  size="20"
+                  color="white"
+                  style={{ marginBottom: "-2px" }}
+                />{" "}
+                <span style={{ fontWeight: "300" }}>Projects</span>
                 <div className="underline bg-1"></div>
               </NavLink>
             </span>
             <span onClick={() => toggleNav()} className="nav-link">
               <NavLink to="/resume">
-                <UilFileAlt size="20" color="white" /> Resume
+                <UilFileAlt
+                  size="20"
+                  color="white"
+                  style={{ marginBottom: "-2px" }}
+                />{" "}
+                <span style={{ fontWeight: "300" }}>Resume</span>
                 <div className="underline bg-1"></div>
               </NavLink>
             </span>
@@ -98,7 +115,7 @@ const Navbar = () => {
               className={navOpen ? "burger " + fade : "burger2 " + fade}
               onClick={fade === "" ? toggleNav : undefined}
             >
-              <UilBars size="30" color="white" />
+              <UilBars size="30" color="rgb(38, 159, 235)" />
             </span>
           ) : (
             <span

@@ -87,22 +87,21 @@ export default function Homepage() {
           className={`homepage-introduction ${textClass}`}
         >
           <p>
-            In looking for a career that would satisy my desire to create and
-            problem solve, I found programming…
+            In looking for a career that would satisy my itch to problem solve,
+            I found programming…
           </p>
           <p>
-            I started off programming games in GML, to making websites with
-            Django (Python), to now creating websites with JavaScript and React
-            the past couple years.
+            I started off programming games in GML and making websites with
+            Django (Python), to now creating websites with React (JavaScript).
           </p>
           <p>
             My interests are in building Web Technologies and Products that
             improve the user's quality of life.
           </p>
           <p>
-            Staying informed on developments in the tech industry as whole is
-            important to me, as well as making my best effort to learn
-            technologies that are relevant to my current practice.
+            I enjoy gaining insight on developments in tech, as well as
+            increasing knowledge on technologies that are relevant to my current
+            practice.
           </p>
         </div>
       </div>
@@ -129,11 +128,11 @@ export default function Homepage() {
             // },
           ]}
           wrapper="div"
-          cursor={false}
+          cursor={true}
           repeat={Infinity}
           className="typeText2"
           style={{
-            color: `rgb(${color})`,
+            color: `rgba(${color},.85)`,
             fontWeight: "400",
           }}
           speed="10"
@@ -146,7 +145,7 @@ export default function Homepage() {
       <h3>
         <TypeAnimation
           sequence={[
-            "Toby Van Baast",
+            "TOBY VAN BAAST",
             // () => {
             //   console.log("Done typing!"); // Place optional callbacks anywhere in the array
             // },
@@ -185,11 +184,8 @@ export default function Homepage() {
       <div className="page-body">
         <div className="section" style={{ justifyContent: "space-between" }}>
           <div style={{ margin: "0 1em", textAlign: "left" }}>
-            <h2
-              className="homepage-jumbo-text"
-              style={{ color: `rgb(${color})`, marginBottom: "2em" }}
-            >
-              {/* I'M{" "} */}
+            <h2 className="homepage-jumbo-text" style={{ marginBottom: "2em" }}>
+              {/* I am{" "} */}
               <span style={{ color: `rgb(${color})`, fontWeight: "600" }}>
                 <TobyVanBaast />
               </span>
@@ -242,19 +238,20 @@ export default function Homepage() {
               className="portfolioAnim"
               style={{
                 borderRadius: "100%",
-                height: "250px",
-                width: "250px",
-                border: `5px dotted ${`rgb(${color})`}`,
-                marginLeft: "-5.5px",
-                marginTop: "-5px",
+                height: "240px",
+                width: "240px",
+                border: `5px solid ${`rgba(${color},.5)`}`,
+                borderBottom: `5px solid ${`rgba(${color},0`}`,
+                borderTop: `5px solid ${`rgba(${color},0`}`,
               }}
             ></div>
             <div
               style={{
-                marginTop: "-250px",
+                marginTop: "-245px",
+                marginLeft: "5px",
                 borderRadius: "100%",
-                height: "246px",
-                width: "246px",
+                height: "240px",
+                width: "240px",
                 backgroundImage: "url(../../Tobyvb1-no-bg.png)",
                 backgroundPosition: "center",
                 backgroundSize: "100%",
@@ -264,7 +261,7 @@ export default function Homepage() {
         </div>
         <div>
           <h2 style={{ marginBottom: "0" }}>FIND ME ON</h2>
-          <p style={{ margin: "0 auto 3em auto" }}>
+          <p style={{ margin: "0 auto 2em auto" }}>
             Feel free to <span style={{ color: `rgb(${color})` }}>connect</span>{" "}
             with me
           </p>
