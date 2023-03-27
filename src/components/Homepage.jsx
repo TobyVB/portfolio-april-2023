@@ -23,7 +23,7 @@ function Percentage() {
   }, []);
   return (
     <div>
-      <div>{percent < 20 && <p className="goDown"></p>}</div>
+      <p>{percent < 20 && <div className="goDown"></div>}</p>
     </div>
   );
 }
@@ -83,6 +83,7 @@ export default function Homepage() {
         <div
           style={{
             margin: "0 auto",
+            padding: "1em",
           }}
           className={`homepage-introduction ${textClass}`}
         >
@@ -131,7 +132,7 @@ export default function Homepage() {
           wrapper="div"
           cursor={false}
           repeat={Infinity}
-          className="typeText2"
+          className="typeText"
           style={{
             color: `rgb(${color})`,
             fontWeight: "400",
@@ -182,7 +183,7 @@ export default function Homepage() {
       ></div>
 
       {/* ######################################################### */}
-      <div className="page-body">
+      <div style={{ padding: "10em 2em 5em 2em" }}>
         <div className="section" style={{ justifyContent: "space-between" }}>
           <div style={{ margin: "0 1em", textAlign: "left" }}>
             <h2
@@ -216,15 +217,12 @@ export default function Homepage() {
         >
           <Percentage />
         </div>
-        <div className="greetings">
-          <h2>
-            <span style={{ marginRight: "1em" }} className={waive}>
-              👋
-            </span>
-            Greetings!
-          </h2>
-        </div>
-
+        <h2>
+          <span style={{ marginRight: "1em" }} className={waive}>
+            👋
+          </span>
+          Greetings!
+        </h2>
         <div className="section2">
           <Introduction />
 
