@@ -171,8 +171,9 @@ export default function Projects() {
   return (
     <div>
       <div
+        className="bg-starter"
         style={{
-          opacity: "30%",
+          opacity: "50%",
           backgroundPosition: "center",
           backgroundImage: "url(../../background/starrysky.jpg)",
           display: "block",

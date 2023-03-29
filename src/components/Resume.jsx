@@ -9,8 +9,9 @@ export default function Resume() {
   return (
     <div>
       <div
+        className="bg-starter"
         style={{
-          opacity: "35%",
+          opacity: "50%",
           backgroundPosition: "center",
           backgroundImage: "url(../../background/starrysky.jpg)",
           display: "block",

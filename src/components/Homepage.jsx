@@ -52,7 +52,7 @@ export default function Homepage() {
     const interval = setInterval(() => {
       const texts = document.querySelector(".homepage-introduction");
       const textsLoc = texts.getBoundingClientRect().top;
-      const scrollLoc = scrollBody.current.scrollTop - 150;
+      const scrollLoc = scrollBody.current.scrollTop;
       console.log("scroll " + scrollLoc + " text: " + textsLoc);
       if (textsLoc > scrollLoc + 700) {
         if (added) {
@@ -169,7 +169,7 @@ export default function Homepage() {
       <div
         className={background}
         style={{
-          opacity: "30%",
+          opacity: "50%",
           backgroundPosition: "center",
           backgroundImage: "url(../../background/starrysky.jpg)",
           display: "block",
