@@ -29,13 +29,6 @@ function Percentage() {
 }
 
 export default function Homepage() {
-  // const color = "255, 255, 255";
-  // const color = "255, 69, 0";
-  // const color = "7, 190, 184";
-  // const color = "255, 255, 255";
-  // const color = "205, 242, 82";
-  // const color = "139, 245, 115";
-  // const color = "49, 176, 255";
   const color = "38,159, 235";
 
   const scrollBody = useRef();
@@ -259,7 +252,7 @@ export default function Homepage() {
             ></div>
           </div>
         </div>
-        <div>
+        <div className="homepage-icons-container">
           <h2 style={{ marginBottom: "0" }}>FIND ME ON</h2>
           <p style={{ margin: "0 auto 2em auto" }}>
             Feel free to <span style={{ color: `rgb(${color})` }}>connect</span>{" "}

@@ -397,6 +397,12 @@ a.active {
     height: 40vw;
     width: 40vw;
   }
+  .homepage-icons-container {
+    padding: 5em 0;
+  }
+  .homepage-icons {
+    gap: 1.5em;
+  }
 }
 
 @keyframes navAnimation {
