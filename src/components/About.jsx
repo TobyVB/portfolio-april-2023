@@ -224,7 +224,7 @@ export default function About() {
               </p>
               <p>
                 I am a self-taught developer who has spent most of and the
-                majority of my days the past several years coding.
+                majority of my days coding for the past several years.
               </p>
               <p style={{ paddingTop: "1em" }}>
                 Apart from coding, some other activities that I love to do!
