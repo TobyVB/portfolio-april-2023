@@ -114,8 +114,6 @@ export default function Homepage() {
             1000, // Waits 1s
             "Freelancer",
             1000, // Waits 1s
-            "Enthusiast", //
-            1000, // Waits 1s
 
             // () => {
             //   console.log("Done typing!"); // Place optional callbacks anywhere in the array
