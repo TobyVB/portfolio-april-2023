@@ -55,6 +55,14 @@ const mainLoader = async () => {
       github: "https://github.com/TobyVB/Blog",
       demo: "https://tobyvbsblog.vercel.app/",
     },
+    {
+      path: "https://user-images.githubusercontent.com/98196156/232417761-58ea5f68-b89e-4b0c-9d47-0841a1f79e1b.png",
+      size: "100%",
+      title: "Schedule",
+      info: "This Schedule app was made to prototype a feature for a company. This is also a Progressive Web App. The instructions are in the github README.md file",
+      github: "https://github.com/TobyVB/Schedule-React-PWA",
+      demo: "https://coding-helper-51e6b.web.app/",
+    },
   ];
   return projectData;
 };
