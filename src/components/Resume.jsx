@@ -38,7 +38,7 @@ export default function Resume() {
               <a
                 className="resume-btn"
                 onClick={() =>
-                  window.open("url(../../resume-march-2023.pdf", "_blank")
+                  window.open("url(../../Resume-April-17-2023.pdf", "_blank")
                 }
                 style={{
                   display: "inline-flex",
@@ -67,7 +67,7 @@ export default function Resume() {
               <a
                 className="resume-btn"
                 onClick={() =>
-                  window.open("url(../../resume-march-2023.pdf", "_blank")
+                  window.open("url(../../Resume-April-17-2023.pdf", "_blank")
                 }
                 style={{
                   display: "inline-flex",
