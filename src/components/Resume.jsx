@@ -61,7 +61,7 @@ export default function Resume() {
                 maxWidth: "80vw",
                 objectFit: "contain",
               }}
-              src="../../resume-march-2023.jpg"
+              src="../../Resume-April-17-2023.jpg"
             />
             <div className="resume-btn-container">
               <a
