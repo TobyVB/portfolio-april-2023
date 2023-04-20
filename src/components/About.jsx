@@ -219,7 +219,7 @@ export default function About() {
             >
               <h2 style={{ textAlign: "center" }}>Who am I?</h2>
               <p>
-                Hi Everyone, I am <span className="clr-1">Toby Van Baast</span>{" "}
+                My name is <span className="clr-1">Toby Van Baast</span> and I'm
                 from <span className="clr-1">Austin, Texas</span>.
               </p>
               <p>
