@@ -3,7 +3,6 @@ import GitHubCalendar from "react-github-calendar";
 
 function Percentage() {
   const [percent, setPercent] = useState();
-  const [pos, setPos] = useState("arrowAnim");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +19,6 @@ function Percentage() {
   }, []);
   return (
     <div>
-      {/* <p style={{ fontSize: "2rem" }}>{Math.ceil(percent)}%</p> */}
       <div>{percent < 20 && <p className="goDown"></p>}</div>
     </div>
   );
@@ -36,23 +34,6 @@ export default function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const selectLastHalfYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
-
-    return contributions.filter((day) => {
-      const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
-
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
 
   // skills data
   const [animateClass, setAnimateClass] = useState("");
@@ -284,10 +265,8 @@ export default function About() {
             <GitHubCalendar
               username="TobyVB"
               color="rgb(38, 159, 235)"
-              // color="rgb(105, 205, 235)"
               className="cheese"
               style={{ margin: "0 auto" }}
-              // transformData={selectLastHalfYear}
             />
           </div>
         </div>
