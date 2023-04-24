@@ -200,23 +200,22 @@ export default function About() {
             >
               <h2 style={{ textAlign: "center" }}>Who am I?</h2>
               <p>
-                My name is <span className="clr-1">Toby Van Baast</span> and I'm
-                from <span className="clr-1">Austin, Texas</span>.
-              </p>
-              <p>
-                I am a self-taught developer who has spent most of and the
-                majority of my days coding for the past several years.
+                I am a Web Developer from{" "}
+                <span className="clr-1">Austin, Texas</span> who loves
+                technology and has spent the majority of my time coding for the
+                past several years.
               </p>
               <p style={{ paddingTop: "1em" }}>
-                Apart from coding, some other activities that I love to do!
+                Apart from coding, some other activities that I love to do:
               </p>
               <ul>
-                <li>Learning about new technology</li>
-                <li>Learning about performance psychology</li>
+                <li>Learning about about advances in technology</li>
                 <li>
-                  Trying new foods and seeing new venues for entertainment and
-                  recreation
+                  Learning about performance psychology, daily optimisation and
+                  fitness
                 </li>
+                <li>Creating and trying new foods.</li>
+                <li>Exploring new venues for entertainment and recreation</li>
               </ul>
             </div>
             <div

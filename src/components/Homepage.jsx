@@ -84,9 +84,9 @@ export default function Homepage() {
             I found programming…
           </p>
           <p>
-            I started off programming by making games in GML to making websites
-            with Django (Python), to now creating websites with React
-            (JavaScript) for the past 2 years.
+            I began programming by making games in Game Maker Language, and
+            websites using Django. For the past 2 years I've built several
+            full-stack applications utilizing vanilla JavaScript and React.
           </p>
           <p>
             My interests are in building applications and products that improve
@@ -109,11 +109,9 @@ export default function Homepage() {
             1000,
             "Developer",
             1000, // Waits 1s
-            "Digital Artist",
+            "Designer",
             1000, // Waits 1s
             "Videogame Maker",
-            1000, // Waits 1s
-            "Freelancer",
             1000, // Waits 1s
 
             // () => {
