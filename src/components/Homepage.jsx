@@ -84,17 +84,12 @@ export default function Homepage() {
             I found programming…
           </p>
           <p>
-            I began programming by making games in Game Maker Language, and
-            websites using Django. For the past 2 years I've built several
-            full-stack applications utilizing vanilla JavaScript and React.
-          </p>
-          <p>
-            My interests are in building applications and products that improve
-            the user's quality of life.
+            The past two years I've been learning and building websites
+            full-time.
           </p>
           <p>
             Today, the thought of working with a dedicated team who share my
-            passion for coding motivate me to to do everything I can to make
+            passion for coding motivates me to to do everything I can to make
             that a reality.
           </p>
         </div>
