@@ -211,7 +211,7 @@ export default function About() {
               <ul>
                 <li>Learning about about advances in technology</li>
                 <li>
-                  Learning about performance psychology, daily optimisation and
+                  Learning about performance psychology, daily optimization and
                   fitness
                 </li>
                 <li>Creating and trying new foods.</li>
