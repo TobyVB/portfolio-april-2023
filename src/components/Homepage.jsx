@@ -84,17 +84,18 @@ export default function Homepage() {
             I found programming…
           </p>
           <p>
-            I started off programming games in GML and making websites with
-            Django (Python), to now creating websites with React (JavaScript).
+            I started off programming by making games in GML to making websites
+            with Django (Python), to now creating websites with React
+            (JavaScript) for the past 2 years.
           </p>
           <p>
-            My interests are in building Web Technologies and Products that
-            improve the user's quality of life.
+            My interests are in building applications and products that improve
+            the user's quality of life.
           </p>
           <p>
-            I enjoy gaining insight on developments in tech, as well as
-            increasing knowledge on technologies that are relevant to my current
-            practice.
+            Today, the thought of working with a dedicated team who share my
+            passion for coding motivate me to to do everything I can to make
+            that a reality.
           </p>
         </div>
       </div>
