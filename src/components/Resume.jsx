@@ -39,7 +39,7 @@ export default function Resume() {
                 className="resume-btn"
                 onClick={() =>
                   window.open(
-                    "url(../../resume-hybrid-April-23-2023.pdf",
+                    "url(../../resume-hybrid-April-24-2023.pdf",
                     "_blank"
                   )
                 }
@@ -64,14 +64,14 @@ export default function Resume() {
                 maxWidth: "80vw",
                 objectFit: "contain",
               }}
-              src="../../resume-hybrid-April-23-2023.jpg"
+              src="../../resume-hybrid-April-24-2023.png"
             />
             <div className="resume-btn-container">
               <a
                 className="resume-btn"
                 onClick={() =>
                   window.open(
-                    "url(../../resume-hybrid-April-23-2023.pdf",
+                    "url(../../resume-hybrid-April-24-2023.pdf",
                     "_blank"
                   )
                 }
