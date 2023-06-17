@@ -9,6 +9,7 @@ import {
   UilPen,
   UilBars,
   UilTimes,
+  UilHome,
 } from "@iconscout/react-unicons";
 
 const Navbar = () => {
@@ -43,40 +44,29 @@ const Navbar = () => {
         <div className="nav-link-container">
           <span onClick={() => toggleNav("hp")} className="nav-link">
             <NavLink to="/">
-              <span style={{ fontWeight: "600" }}>Home</span>
+              <UilHome size="20" style={{ marginBottom: "-2px" }} />{" "}
+              <span style={{ fontWeight: "300" }}>Home</span>
             </NavLink>
           </span>
 
           <div className={navOpen ? `nav-links ${shrink}` : "nav-links-closed"}>
             <span onClick={() => toggleNav()} className="nav-link">
               <NavLink to="/about">
-                <UilUser
-                  size="20"
-                  color="white"
-                  style={{ marginBottom: "-2px" }}
-                />{" "}
+                <UilUser size="20" style={{ marginBottom: "-2px" }} />{" "}
                 <span style={{ fontWeight: "300" }}>About</span>
                 <div className="underline bg-1"></div>
               </NavLink>
             </span>
             <span onClick={() => toggleNav()} className="nav-link">
               <NavLink to="/projects">
-                <UilWindow
-                  size="20"
-                  color="white"
-                  style={{ marginBottom: "-2px" }}
-                />{" "}
+                <UilWindow size="20" style={{ marginBottom: "-2px" }} />{" "}
                 <span style={{ fontWeight: "300" }}>Projects</span>
                 <div className="underline bg-1"></div>
               </NavLink>
             </span>
             <span onClick={() => toggleNav()} className="nav-link">
               <NavLink to="/resume">
-                <UilFileAlt
-                  size="20"
-                  color="white"
-                  style={{ marginBottom: "-2px" }}
-                />{" "}
+                <UilFileAlt size="20" style={{ marginBottom: "-2px" }} />{" "}
                 <span style={{ fontWeight: "300" }}>Resume</span>
                 <div className="underline bg-1"></div>
               </NavLink>
