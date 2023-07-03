@@ -102,11 +102,11 @@ export default function Homepage() {
         <TypeAnimation
           sequence={[
             1000,
-            "Developer",
+            "Web Developer",
             1000, // Waits 1s
-            "Designer",
+            "Web Designer",
             1000, // Waits 1s
-            "Videogame Maker",
+            "Freelance",
             1000, // Waits 1s
 
             // () => {
