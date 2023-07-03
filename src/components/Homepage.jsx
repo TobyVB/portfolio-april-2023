@@ -118,8 +118,9 @@ export default function Homepage() {
           repeat={Infinity}
           className="typeText2"
           style={{
-            color: `rgba(${color},.85)`,
+            color: `rgba(${color},1)`,
             fontWeight: "400",
+            textShadow: "1px 1px 2px black",
           }}
           speed="10"
         />

@@ -55,14 +55,6 @@ const mainLoader = async () => {
       github: "https://github.com/TobyVB/movieDB",
       demo: "https://tobyvb-movie-db.vercel.app/",
     },
-    {
-      path: "https://user-images.githubusercontent.com/98196156/226164053-2a55833c-6c09-42c9-9514-e9d665980a7f.png",
-      size: "100%",
-      title: "Blog App",
-      info: "This Blog web app was made by following the NextJS documentation",
-      github: "https://github.com/TobyVB/Blog",
-      demo: "https://tobyvbsblog.vercel.app/",
-    },
   ];
   return projectData;
 };
