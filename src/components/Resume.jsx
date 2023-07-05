@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import { UilFileDownload } from "@iconscout/react-unicons";
 
 export default function Resume() {
