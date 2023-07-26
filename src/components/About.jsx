@@ -211,9 +211,9 @@ export default function About() {
               <h2 style={{ textAlign: "center" }}>Who am I?</h2>
               <p>
                 I am a Web Developer from{" "}
-                <span className="clr-1">Austin, Texas</span> who loves
-                technology and has spent the majority of my time coding for the
-                past several years.
+                <span className="clr-1">Austin, Texas</span> residing in San
+                Antonio, who loves technology and has spent the majority of my
+                time coding for the past several years.
               </p>
               <p style={{ paddingTop: "1em" }}>
                 Apart from coding, some other activities that I love to do:
