@@ -95,7 +95,7 @@ export default function About() {
     {
       name: "url(../../tech-stack-icons/mysql.svg)",
       size: "60%",
-      delay: "1.2s",
+      delay: "1.05s",
     },
     {
       name: "url(../../tech-stack-icons/postgresql.svg)",
@@ -105,12 +105,12 @@ export default function About() {
     {
       name: "url(../../tech-stack-icons/firebase.svg)",
       size: "30%",
-      delay: "1.05s",
+      delay: "1.35s",
     },
     {
       name: "url(../../tech-stack-icons/jquery.svg)",
       size: "60%",
-      delay: "1.2s",
+      delay: "1.5s",
     },
   ];
 
